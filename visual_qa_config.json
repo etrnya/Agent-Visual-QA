@@ -1,0 +1,22 @@
+{
+  "gemini_api_key": "",
+  "viewports": {
+    "mobile": {
+      "width": 375,
+      "height": 812
+    },
+    "tablet": {
+      "width": 768,
+      "height": 1024
+    },
+    "desktop": {
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "diff_threshold_percent": 0.1,
+  "pixel_diff_tolerance": 15,
+  "compress_max_width": 1024,
+  "compress_quality": 80,
+  "output_dir": ".visual_qa"
+}

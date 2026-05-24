@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+.visual_qa/current/
+.visual_qa/diff/
+.visual_qa/*_compressed.webp
+.visual_qa_test_output*
+.pytest_cache/
+.DS_Store
