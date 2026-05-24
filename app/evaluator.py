@@ -116,7 +116,11 @@ def evaluate_layout(image_path, config=None, custom_prompt=None):
         }
     }
     
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key={api_key}"
+    model_name = "gemini-2.5-flash"
+    if config and "gemini_model" in config and config["gemini_model"]:
+        model_name = config["gemini_model"]
+        
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/{model_name}:generateContent?key={api_key}"
     data = json.dumps(payload).encode("utf-8")
     
     req = urllib.request.Request(
